@@ -1,0 +1,42 @@
+
+<div class="container">
+<form #adddata="ngForm" (ngSubmit)="addEmployee(adddata.value)"  >
+    <div class="form-group">
+        <label for="employeeFirstName">First Name:</label>
+        <input type="text" class="form-control"
+               id="employeeFirstName" placeholder="Enter First Name" ngModel
+               name="employeeFirstName">
+    </div>
+     
+    <div class="form-group">
+        <label for="employeeLastName">Last Name:</label>
+        <input type="text" class="form-control" id="employeeLastName" ngModel
+            placeholder="Enter Last Name" name="employeeLastName">
+    </div>
+     
+    <div class="form-group">
+        <label for="employeeEmail">Email Id:</label>
+        <input type="email" class="form-control" id="employeeEmail" ngModel
+            placeholder="Enter Email Id" name="employeeEmail">
+    </div>
+     
+    <div class="form-group">
+        <label for="employeePhone">Contact No:</label>
+        <input type="text" class="form-control" id="employeePhone" ngModel
+            placeholder="Enter Contact Number" name="employeePhone">
+    </div>
+
+    <div class="form-group">
+        <label for="employeLocation">Location : </label>
+        <input type="text" class="form-control" id="employeLocation" ngModel
+            placeholder="Enter location " name="employeLocation">
+    </div>
+     
+    
+     
+    <button type="submit" class="btn bg-success">
+        Submit
+    </button>
+</form>
+
+</div>
